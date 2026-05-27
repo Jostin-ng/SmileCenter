@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmileCenter Odontología Integral - Tu mejor sonrisa empieza aquí. Servicios odontológicos profesionales en Barranquilla, Colombia.">
+    <meta name="theme-color" content="#4A90D9">
+    <title>SmileCenter - Tu mejor sonrisa empieza aquí</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- INICIO BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/573006594378?text=Hola%20SmileCenter%2C%20estoy%20interesado%20en%20agendar%20una%20cita" 
+       class="whatsapp-btn" 
+       title="Contactar por WhatsApp" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Abrir WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- FIN BOTÓN FLOTANTE WHATSAPP -->
+
+    <!-- INICIO HEADER/NAVBAR -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tooth"></i>
+                <span>SmileCenter</span>
+            </div>
+
+            <!-- Botón menú hamburguesa móvil -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- FIN HEADER/NAVBAR -->
+
+    <!-- INICIO SECCIÓN HERO -->
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Cuidamos tu sonrisa con tecnología y calidez</h1>
+                <p class="hero-subtitle">Somos una clínica odontológica en Barranquilla comprometida con tu bienestar bucal. Agenda tu cita hoy y transforma tu sonrisa.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Agendar Cita</button>
+                    <button class="btn btn-outline" onclick="document.getElementById('servicios').scrollIntoView({behavior: 'smooth'})">Ver Servicios</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1606811841689-23dfb2edf5d9?w=600&h=600&fit=crop" 
+                     alt="Consultorio dental moderno con equipos de última tecnología"
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCIÓN HERO -->
+
+    <!-- INICIO SECCIÓN SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Tratamientos profesionales para toda la familia</p>
+            
+            <div class="servicios-grid">
+                <!-- Servicio 1: Limpieza -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <h3>Limpieza y Profilaxis</h3>
+                    <p class="descripcion">Eliminación de sarro y placa bacteriana para mantener tus encías sanas y tu aliento fresco.</p>
+                    <div class="servicio-details">
+                        <span class="badge">$80.000 COP</span>
+                        <p><strong>Duración:</strong> 45 minutos</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="scrollToForm('Limpieza y Profilaxis')">Consultar</button>
+                </div>
+
+                <!-- Servicio 2: Blanqueamiento -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Blanqueamiento Dental</h3>
+                    <p class="descripcion">Tratamiento profesional que aclara hasta 8 tonos el color de tus dientes de forma segura y efectiva.</p>
+                    <div class="servicio-details">
+                        <span class="badge">$350.000 COP</span>
+                        <p><strong>Duración:</strong> 60 minutos</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="scrollToForm('Blanqueamiento Dental')">Consultar</button>
+                </div>
+
+                <!-- Servicio 3: Ortodoncia -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Ortodoncia</h3>
+                    <p class="descripcion">Brackets metálicos, cerámicos y alineadores invisibles para una sonrisa perfectamente alineada.</p>
+                    <div class="servicio-details">
+                        <span class="badge">$1.800.000 COP</span>
+                        <p><strong>Duración:</strong> 18-24 meses</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="scrollToForm('Ortodoncia')">Consultar</button>
+                </div>
+
+                <!-- Servicio 4: Implantes -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Implantes Dentales</h3>
+                    <p class="descripcion">Restauración permanente de piezas perdidas con implantes de titanio de alta durabilidad.</p>
+                    <div class="servicio-details">
+                        <span class="badge">$2.500.000 COP</span>
+                        <p><strong>Duración:</strong> 3-6 meses</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="scrollToForm('Implantes Dentales')">Consultar</button>
+                </div>
+
+                <!-- Servicio 5: Odontología Pediátrica -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-face-smile"></i>
+                    </div>
+                    <h3>Odontología Pediátrica</h3>
+                    <p class="descripcion">Atención especializada y amigable para los más pequeños del hogar, desde su primera visita.</p>
+                    <div class="servicio-details">
+                        <span class="badge">$60.000 COP</span>
+                        <p><strong>Duración:</strong> 30 minutos</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="scrollToForm('Odontología Pediátrica')">Consultar</button>
+                </div>
+
+                <!-- Servicio 6: Urgencias -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Urgencias Odontológicas</h3>
+                    <p class="descripcion">Atención inmediata para dolor dental agudo, fracturas y abscesos. Citas disponibles el mismo día.</p>
+                    <div class="servicio-details">
+                        <span class="badge">$120.000 COP</span>
+                        <p><strong>Duración:</strong> 30-60 minutos</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="scrollToForm('Urgencias Odontológicas')">Consultar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCIÓN SERVICIOS -->
+
+    <!-- INICIO SECCIÓN EQUIPO -->
+    <section id="equipo" class="equipo">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo Profesional</h2>
+            <p class="section-subtitle">Especialistas comprometidos con tu salud bucal</p>
+            
+            <div class="equipo-grid">
+                <!-- Profesional 1 -->
+                <div class="equipo-card">
+                    <div class="equipo-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" 
+                             alt="Dra. Valeria Torres Mendoza - Odontóloga General y Estética"
+                             loading="lazy">
+                    </div>
+                    <h3>Dra. Valeria Torres Mendoza</h3>
+                    <span class="badge badge-primary">Odontología General y Estética</span>
+                    <p class="registro"><strong>Registro:</strong> 12345-CUN</p>
+                    <p class="descripcion">Especialista en rehabilitación oral y blanqueamiento dental con 8 años de experiencia. Egresada de la Universidad del Norte.</p>
+                </div>
+
+                <!-- Profesional 2 -->
+                <div class="equipo-card">
+                    <div class="equipo-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+                             alt="Dr. Andrés Martínez Roa - Ortodoncista"
+                             loading="lazy">
+                    </div>
+                    <h3>Dr. Andrés Martínez Roa</h3>
+                    <span class="badge badge-primary">Ortodoncia y Ortopedia Maxilar</span>
+                    <p class="registro"><strong>Registro:</strong> 67890-CUN</p>
+                    <p class="descripcion">Ortodoncista con maestría en la Universidad Javeriana. Experto en brackets y alineadores invisibles para niños, jóvenes y adultos.</p>
+                </div>
+
+                <!-- Profesional 3 -->
+                <div class="equipo-card">
+                    <div class="equipo-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" 
+                             alt="Dra. Sofía Herrera Campos - Odontopediatra"
+                             loading="lazy">
+                    </div>
+                    <h3>Dra. Sofía Herrera Campos</h3>
+                    <span class="badge badge-primary">Odontopediatría</span>
+                    <p class="registro"><strong>Registro:</strong> 11223-CUN</p>
+                    <p class="descripcion">Especialista en la atención odontológica infantil, con enfoque lúdico y ambiente libre de miedo para los más pequeños.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCIÓN EQUIPO -->
+
+    <!-- INICIO SECCIÓN TESTIMONIOS -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <h2 class="section-title section-title-light">Lo que dicen nuestros pacientes</h2>
+            
+            <div class="testimonios-grid">
+                <!-- Testimonio 1 -->
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Llevaba años sin ir al dentista por miedo y en SmileCenter me atendieron con tanta paciencia que volví al mes siguiente para el blanqueamiento."</p>
+                    <p class="testimonio-author">Laura Gómez</p>
+                    <p class="testimonio-servicio">Blanqueamiento Dental</p>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Mi hijo de 7 años le encanta venir. La Dra. Sofía lo hace sentir como en un juego. Por fin encontré una odontóloga de confianza para toda la familia."</p>
+                    <p class="testimonio-author">Ricardo Paredes</p>
+                    <p class="testimonio-servicio">Odontología Pediátrica</p>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Me pusieron brackets hace un año y el cambio es increíble. El equipo siempre está disponible para responder mis preguntas por WhatsApp."</p>
+                    <p class="testimonio-author">Daniela Ríos</p>
+                    <p class="testimonio-servicio">Ortodoncia con Brackets</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCIÓN TESTIMONIOS -->
+
+    <!-- INICIO SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Agenda tu Cita</h2>
+            <p class="section-subtitle">Completa el formulario y te contactaremos en menos de 24 horas</p>
+            
+            <div class="contacto-content">
+                <!-- Columna izquierda: Información de contacto -->
+                <div class="contacto-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Calle 72 #58-23, Barrio El Prado<br>Barranquilla, Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+573006594378">+57 300 659 4378</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p><a href="mailto:citas@smilecenter.co">citas@smilecenter.co</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horarios de Atención</h4>
+                            <p>
+                                <strong>Lunes a Viernes:</strong> 8:00 AM – 6:00 PM<br>
+                                <strong>Sábados:</strong> 8:00 AM – 1:00 PM<br>
+                                <strong>Domingos y festivos:</strong> Cerrado
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: Formulario de contacto -->
+                <form id="contactForm" class="contacto-form" action="https://formspree.io/f/xzdwkjap" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                        <input type="text" 
+                               id="nombre" 
+                               name="nombre" 
+                               required 
+                               placeholder="Tu nombre completo"
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico <span class="required">*</span></label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               required 
+                               placeholder="tu@email.com"
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono <span class="required">*</span></label>
+                        <input type="tel" 
+                               id="telefono" 
+                               name="telefono" 
+                               required 
+                               placeholder="Tu número de teléfono"
+                               aria-required="true"
+                               pattern="[0-9\s\-\+\(\)]+"
+                               inputmode="tel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio">Servicio de Interés <span class="required">*</span></label>
+                        <select id="servicio" 
+                                name="servicio" 
+                                required
+                                aria-required="true">
+                            <option value="">-- Selecciona un servicio --</option>
+                            <option value="Limpieza y Profilaxis">Limpieza y Profilaxis</option>
+                            <option value="Blanqueamiento Dental">Blanqueamiento Dental</option>
+                            <option value="Ortodoncia">Ortodoncia</option>
+                            <option value="Implantes Dentales">Implantes Dentales</option>
+                            <option value="Odontología Pediátrica">Odontología Pediátrica</option>
+                            <option value="Urgencias Odontológicas">Urgencias Odontológicas</option>
+                            <option value="Consulta General">Consulta General</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto <span class="required">*</span></label>
+                        <input type="text" 
+                               id="asunto" 
+                               name="asunto" 
+                               required 
+                               placeholder="Ej: Agendar cita de blanqueamiento"
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje <span class="required">*</span></label>
+                        <textarea id="mensaje" 
+                                  name="mensaje" 
+                                  required 
+                                  placeholder="Cuéntanos más sobre lo que necesitas..."
+                                  rows="4"
+                                  minlength="10"
+                                  aria-required="true"></textarea>
+                    </div>
+
+                    <!-- Honeypot antispam (campo oculto) -->
+                    <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off">
+
+                    <!-- Campos ocultos para Formspree -->
+                    <input type="hidden" name="_subject" value="Nueva cita solicitada - SmileCenter">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Casilla de privacidad obligatoria -->
+                    <div class="form-group checkbox">
+                        <input type="checkbox" 
+                               id="privacidad" 
+                               name="privacidad" 
+                               required
+                               aria-required="true">
+                        <label for="privacidad" class="checkbox-label">
+                            Autorizo el tratamiento de mis datos personales conforme a la 
+                            <a href="privacy.html" target="_blank">Ley 1581 de 2012</a> 
+                            y la política de privacidad de SmileCenter. <span class="required">*</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Enviar Mensaje</button>
+                    <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCIÓN CONTACTO -->
+
+    <!-- INICIO SECCIÓN MAPA -->
+    <section class="mapa">
+        <div class="container">
+            <h2 class="section-title">Encuéntranos en el Mapa</h2>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.7692819577253!2d-74.7759!3d10.9897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42f8d5e5e5e5d%3A0x5e5e5e5e5e5e5e5e!2sBarrio%20El%20Prado%2C%20Barranquilla!5e0!3m2!1ses!2sco!4v1234567890" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        aria-label="Mapa de ubicación de SmileCenter"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCIÓN MAPA -->
+
+    <!-- INICIO FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="footer-section">
+                    <h4>SmileCenter</h4>
+                    <p>Odontología integral con confianza, modernidad y calidez humana. Somos tu mejor opción para una sonrisa saludable en Barranquilla.</p>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="privacy.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto y redes sociales -->
+                <div class="footer-section">
+                    <h4>Contacto Rápido</h4>
+                    <ul>
+                        <li><a href="tel:+573006594378">📞 +57 300 659 4378</a></li>
+                        <li><a href="mailto:citas@smilecenter.co">✉️ citas@smilecenter.co</a></li>
+                    </ul>
+                    <h4 class="redes-title">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Síguenos en Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Síguenos en Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/573006594378" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="Contáctanos por WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea inferior -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmileCenter Odontología Integral. Todos los derechos reservados.</p>
+                <p class="privacy-notice">
+                    Protegemos tus datos personales conforme a la 
+                    <a href="privacy.html" target="_blank">Ley 1581 de 2012</a>. 
+                    <a href="privacy.html" target="_blank">Aviso de Privacidad</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
